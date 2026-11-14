@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Finsys App</title>
+    <title>Download Sfinsys App</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
+            background-color: #020617;
+            color: #f8fafc;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,10 +18,11 @@
             box-sizing: border-box;
         }
         .card {
-            background: #ffffff;
+            background: #0f172a;
+            border: 1px solid #1e293b;
             border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            padding: 32px 24px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+            padding: 32px 24px 24px;
             max-width: 400px;
             width: 100%;
             text-align: center;
@@ -29,55 +30,64 @@
         .app-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            font-size: 36px;
-            font-weight: bold;
+            background: linear-gradient(135deg, #fbbf24, #d97706);
+            color: #1e1b4b;
+            font-size: 40px;
+            font-weight: 900;
             border-radius: 20px;
+            border: 2px solid #fcd34d;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 auto 20px;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
         }
         h1 {
-            margin: 0 0 8px;
-            font-size: 24px;
-            color: #111827;
+            margin: 0 0 6px;
+            font-size: 26px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+        .subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            color: #fbbf24;
+            margin-bottom: 6px;
         }
         .version {
-            font-size: 14px;
-            color: #6b7280;
+            font-size: 13px;
+            color: #94a3b8;
             margin-bottom: 24px;
         }
         .download-btn {
             display: inline-block;
-            background-color: #2563eb;
-            color: #ffffff;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #1e1b4b;
             text-decoration: none;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 800;
             padding: 14px 28px;
             border-radius: 10px;
             width: 100%;
             box-sizing: border-box;
-            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+            transition: background 0.2s ease, transform 0.1s ease;
         }
         .download-btn:hover {
-            background-color: #1d4ed8;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
         }
         .instructions {
             margin-top: 28px;
             text-align: left;
-            background-color: #f8fafc;
+            background-color: #1e293b;
             padding: 16px;
             border-radius: 10px;
             font-size: 13px;
-            color: #475569;
-            border: 1px solid #e2e8f0;
+            color: #cbd5e1;
+            border: 1px solid #334155;
         }
         .instructions strong {
-            color: #1e293b;
+            color: #fbbf24;
             display: block;
             margin-bottom: 6px;
         }
@@ -88,28 +98,45 @@
         .instructions li {
             margin-bottom: 4px;
         }
+        .instructions b {
+            color: #ffffff;
+        }
+        .footer {
+            margin-top: 20px;
+            padding-top: 14px;
+            border-top: 1px solid #1e293b;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        .footer span {
+            color: #fbbf24;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="app-icon">F</div>
-        <h1>Finsys</h1>
+        <div class="app-icon">S</div>
+        <h1>Sfinsys</h1>
+        <div class="subtitle">Master Combined Ledger</div>
         <div class="version">Android Application (APK)</div>
         
-        <!-- Ensure your APK file in the repository is named exactly Finsys.apk -->
-        <a href="./Finsys.apk" download="Finsys.apk" class="download-btn">
+         <a href="./Finsys.apk" download="Finsys.apk" class="download-btn">
             Download Finsys.apk
         </a>
-
         <div class="instructions">
             <strong>Installation Guide:</strong>
             <ol>
-                <li>Tap the <b>Download Finsys.apk</b> button above.</li>
+                <li>Tap the <b>Download Sfinsys.apk</b> button above.</li>
                 <li>If prompted by your browser, tap <b>Download anyway</b>.</li>
                 <li>Open the downloaded file from your notifications or <b>Downloads</b> folder.</li>
                 <li>If asked, enable <b>Install from Unknown Sources</b> in your phone settings, then tap <b>Install</b>.</li>
             </ol>
+        </div>
+
+        <div class="footer">
+            Maintained and developed by <span>Santhoshgopal</span>
         </div>
     </div>
 
