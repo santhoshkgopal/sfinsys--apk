@@ -76,8 +76,42 @@
         .download-btn:hover {
             background: linear-gradient(135deg, #fbbf24, #f59e0b);
         }
+        .desktop-btn {
+            display: inline-block;
+            margin-top: 12px;
+            background: #1e293b;
+            color: #fbbf24;
+            border: 1px solid #334155;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+        .desktop-btn:hover {
+            background: #334155;
+            border-color: #fbbf24;
+        }
+        .password-note {
+            margin-top: 16px;
+            background-color: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.35);
+            color: #fcd34d;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .password-note span {
+            color: #ffffff;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
         .instructions {
-            margin-top: 28px;
+            margin-top: 20px;
             text-align: left;
             background-color: #1e293b;
             padding: 16px;
@@ -122,9 +156,19 @@
         <div class="subtitle">Master Combined Ledger</div>
         <div class="version">Android Application (APK)</div>
         
-         <a href="./Finsys.apk" download="Finsys.apk" class="download-btn">
+        <a href="./Finsys.apk" download="Finsys.apk" class="download-btn">
             Download Finsys.apk
         </a>
+
+
+        <a href="https://santhoshkgopal.github.io/sfinsys/" target="_blank" rel="noopener noreferrer" class="desktop-btn">
+            For Desktop Link — Click Here
+        </a>
+
+        <div class="password-note">
+            Note: Default Password — <span>1234</span>
+        </div>
+
         <div class="instructions">
             <strong>Installation Guide:</strong>
             <ol>
